@@ -1,0 +1,21 @@
+[
+  {
+    "type": "java",
+    "name": "jar (in project MyRoninBasee)",
+    "extensions": [
+      {
+        "name": "Sim GUI",
+        "libName": "/Users/kaden/code/frc/codebases/MyRoninBasee/build/jni/release/libhalsim_gui.dylib",
+        "defaultEnabled": false
+      },
+      {
+        "name": "Use Real DriverStation",
+        "libName": "/Users/kaden/code/frc/codebases/MyRoninBasee/build/jni/release/libhalsim_ds_socket.dylib",
+        "defaultEnabled": false
+      }
+    ],
+    "environment": {},
+    "libraryDir": "/Users/kaden/code/frc/codebases/MyRoninBasee/build/jni/release",
+    "mainClassName": "frc.robot.Main"
+  }
+]
