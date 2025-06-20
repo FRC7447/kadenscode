@@ -52,6 +52,12 @@ public class DriveConstants {
   public static final int frontRightTurnCanId = 7;
   public static final int backRightTurnCanId = 2;
 
+  // Device CANCoder IDs
+  public static final int frontLeftCANCoderId = 12;
+  public static final int backLeftCANCoderId = 9;
+  public static final int frontRightCANCoderId = 10;
+  public static final int backRightCANCoderId = 11;
+
   // Drive motor configuration
   public static final int driveMotorCurrentLimit = 50;
   public static final double wheelRadiusMeters = 0.038;
