@@ -94,12 +94,16 @@ public class DriveCommands {
           boolean isFlipped =
               DriverStation.getAlliance().isPresent()
                   && DriverStation.getAlliance().get() == Alliance.Red;
-          drive.runVelocity(
-              ChassisSpeeds.fromFieldRelativeSpeeds(
-                  speeds,
-                  isFlipped
-                      ? drive.getRotation().plus(new Rotation2d(Math.PI))
-                      : drive.getRotation()));
+          // drive.runVelocity(
+          //     ChassisSpeeds.fromFieldRelativeSpeeds(
+          //         speeds,
+          //         isFlipped
+          //             ? drive.getRotation().plus(new Rotation2d(Math.PI))
+          //             : drive.getRotation()));
+          System.out.println("xMPS: " + speeds.vxMetersPerSecond);
+          System.out.println("yMPS: " + speeds.vyMetersPerSecond);
+          System.out.println("oRPS: " + speeds.omegaRadiansPerSecond);
+
         },
         drive);
   }
